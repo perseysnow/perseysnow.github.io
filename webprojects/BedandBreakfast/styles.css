@@ -1,0 +1,186 @@
+body {
+    background-color: #21191a;
+}
+
+
+
+nav {
+    position: sticky;
+    top: 15px;
+    text-align: center;
+    background-color: #21191a;
+    color: #d1dcd9;
+    font-size: large;
+    z-index: 5;
+    border: 3px solid #67919f;
+}
+
+
+.container {
+    margin: auto;
+    width: 30%;
+    background-color: #67919f;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/*margins set to try and keep border closer to the heading text */
+
+h1 {
+    display: block;
+    text-align: center;
+    font-family: "Amarante", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #d1dcd9;
+    font-size: 35pt;
+    border: #67919f dotted 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    background-color: #834000;
+
+}
+
+h2 {
+    text-align: left;
+    font-family: "Amarante", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #d1dcd9;
+    font-size: 25pt;
+    margin-left: 30px;
+
+
+}
+
+/*line-height used to fix spacing between lines so the text isn't squished together*/
+
+.homepage {
+    color: #d1dcd9;
+    font-size: larger;
+    margin-right: 75px;
+    margin-left: 20px;
+    border: #834000 dashed 5px;
+    padding-bottom: 150px;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 25pt;
+}
+
+.homepage img {
+    float: right;
+    margin-right: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+
+
+input #fname,
+#email,
+#tel {
+    width: 35%;
+    margin-left: 15px;
+}
+
+
+.submit {
+    width: initial;
+    margin-left: 50px;
+    color: #ffffff;
+    background-color: #67919f;
+    border: #834000 solid 3px;
+    margin-bottom: 100px;
+}
+
+legend {
+    padding-top: 30px;
+}
+
+fieldset {
+    display: block;
+    padding: 10px;
+    width: 30%;
+    font-size: larger;
+    font-weight: bold;
+    margin: 10px;
+    border: #834000 solid 10px;
+    background-color: #834000;
+    color: #d1dcd9;
+
+}
+
+table {
+    color: #d1dcd9;
+    margin: 100px 0px 0px 100px;
+    width: 80%;
+}
+
+table,
+tr,
+td,
+th {
+    border: 5px solid #67919f;
+    border-collapse: collapse;
+    color: #d1dcd9;
+    background-color: #834000;
+    font-size: large;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    font-size: large;
+}
+
+.singlerooms,
+.doublerooms, .roominfo {
+    padding: 20px;
+    width: 70%;
+    font-size: larger;
+    font-weight: bold;
+    margin: 100px 0px 100px 150px;
+    border: #67919f solid 10px;
+    background-color: #834000;
+    color: #d1dcd9;
+    text-align: center;
+
+}
+
+#singleroomimg{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 250px;
+    padding-right: 50px;
+}
+
+
+
+
+a:link {
+    color: #d1dcd9;
+}
+
+a:visited {
+    color: #67919f;
+}
+
+a:hover {
+    background-color: #d1dcd9;
+    color: #21191a;
+}
+
+footer {
+    text-align: center;
+    background-color: #834000;
+    color: #d1dcd9;
+    font-size: large;
+    position: sticky;
+    bottom: 5px;
+}

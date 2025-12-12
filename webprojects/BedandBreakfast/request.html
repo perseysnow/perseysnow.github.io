@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Request Info</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--Emily Phillips 12Oct25-->
+</head>
+
+
+<body>
+    <nav> &#127957; <a href="index.html">Home Page</a> &#127957; <a href="rooms.html">Room Listings</a> &#127957; <a
+            href="request.html">Request a
+            Reservation</a> &#127957;
+    </nav>
+
+    <h1>Reservation Request Form</h1>
+    <form action="thankyou.html" method="get" id="form">
+    <fieldset id="requestform">
+        <legend>Contact Information</legend>
+        <label for="fname">Name: <input type="text" name="fname" id="fname" placeholder="Name" required
+                autofocus></label><br>
+        <label for="email">Email: <input type="email" name="email" id="email" placeholder="Email" required
+                ></label><br>
+        <label for="tel">Phone: <input type="tel" name="tel" id="tel" placeholder="Phone Number" required
+                ></label>
+    </fieldset>
+     <fieldset id="contactinfo">
+            <legend>Preferred Contact Method</legend>
+            <select name="contact" id="contact">
+                <option value="email">Email</option>
+                <option value="telephone">Phone Number</option>
+            </select>
+        </fieldset>
+    <fieldset id="roompreferences">
+        <legend>Room Preferences</legend>
+        <input type="radio" name="room" id="single" required>
+        <label for="single">Single</label> <br>
+        <input type="radio" name="room" id="double" required>
+        <label for="double">Double</label>
+    </fieldset><br>
+    <fieldset id="inforequest">
+        <legend>Information Request</legend>
+        <p>Select the things you want more information about</p>
+        <input type="checkbox" name="petpolicy" id="petpolicy">
+        <label for="petpolicy">Pet Policy</label> <i class="fa-solid fa-paw"></i><br>
+        <input type="checkbox" name="boatrentals" id="boatrentals">
+        <label for="boatrentals">Boat Rentals</label> <i class="fa-solid fa-sailboat"></i><br>
+        <input type="checkbox" name="food" id="food">
+        <label for="food">Dietary Concerns</label> <i class="fa-solid fa-utensils"></i><br>
+    </fieldset><br>
+    <fieldset id="requestcheckin">
+        <legend>Requested Check-in</legend>
+        <input type="date" id="date" name="date">
+    </fieldset><br>
+    <fieldset id="otherquestions">
+        <legend>Have questions about things we didn't cover above?</legend>
+        <textarea name="questions" id="questions" rows="10" cols="40"></textarea>
+    </fieldset><br>
+    <input type="submit" value="Submit" class="submit">
+    </form>
+  <footer>
+        &#127957; &copy;2026 &#127957; <a href="mailto:crose@amaranthhouse.com">concierge@amaranthhouse.com</a>
+        &#127957; <a href="tel:+112312345678">tel:12312345678</a> &#127957;
+    </footer>
+
+</body>
+
+</html>

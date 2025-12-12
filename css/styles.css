@@ -1,0 +1,178 @@
+/* FontsUsed
+
+ .domine-regular {
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
+
+/* Page background. Originally attempted a background image but it failed. File still in images folder as I plan to try again with that. */
+
+body {
+    background-color: rgb(48, 53, 48);
+    font-family: "Domine", serif;
+    color: antiquewhite;
+}
+
+main {}
+
+main section {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    color: antiquewhite;
+
+}
+
+/* Navbar */
+
+nav {
+    position: sticky;
+    margin: 15px;
+    padding-bottom: 25px;
+    background-color: rgb(77, 92, 77);
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    overflow: hidden;
+    background: rgb(43, 49, 43);
+    float: left;
+    border: 2px solid rgb(77, 92, 77);
+}
+
+ul li a:link {
+    color: rgb(0, 0, 0)
+}
+
+ul li a:hover {
+    color: rgb(119, 41, 13);
+    box-shadow: 0 8px 16px 0 rgba(19, 20, 18, 0.6);
+}
+
+ul li a:visited {
+    color: rgb(255, 255, 255);
+}
+
+/* img positioning and decoration */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    opacity: 0.5;
+    padding: 25px;
+
+}
+
+/* Main Section Styles */
+
+section {
+    background-color: rgb(77, 92, 77);
+    padding: 25px;
+}
+
+p {
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* Styling for skillset */
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+ul {
+    text-align: center;
+    list-style: none;
+    padding: 15px;
+}
+
+
+/* Projects Links */
+
+a:link {
+    color: rgb(188, 212, 176);
+
+}
+
+a:hover {
+    color: rgb(11, 58, 58);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+#disclaimer {
+    text-align: left;
+}
+
+
+/* Footer */
+
+footer {
+    border-top: 5px dotted antiquewhite;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+    body {
+        background-color: rgb(119, 104, 119);
+    }
+
+    nav {
+        background-color: rgb(80, 69, 80);
+    }
+}
+
+@media (max-width: 950px) {
+    body {
+        background-color: rgb(190, 178, 160);
+    }
+
+    nav {
+        background-color: rgb(185, 142, 117)
+    }
+
+    nav ul li {
+        background-color: rgb(129, 98, 59);
+        color: blanchedalmond;
+    }
+
+    header {
+        color: black;
+    }
+
+    footer {
+        color: black;
+    }
+
+
+}
+
+/* This one is actually the default one due to my monitor size and normal browser size. */
+@media (min-width: 950px) {}

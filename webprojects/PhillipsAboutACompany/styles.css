@@ -1,0 +1,156 @@
+/*Emily Phillips CA Menu Style Page*/
+
+/* Background image behind everything. Unfortunately somewhat hidden. */
+
+body {
+    background-image: url(backgroundtest2.jpg);
+    font-size: large;
+}
+
+
+nav,
+footer {
+    text-align: center;
+    margin: auto;
+    background-color: rgb(63, 55, 47);
+    color: rgb(255, 255, 255);
+    font-size: 18pt;
+    border: 5px solid ghostwhite;
+    margin: 20px;
+}
+
+/*Font-weight and font-size set to emphasize page headers and set them apart from the rest of the page*/
+
+#welcome {
+    font-family: "Almendra SC", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 38pt;
+    color: rgb(213, 217, 221);
+    background-color: rgb(44, 45, 53);
+    text-align: center;
+    border: 3px solid ghostwhite;
+    margin: 20px;
+}
+
+/*Margin was set to help show off background image more, discovered it helped break up the sections along the way.*/
+
+.about {
+    background-color: rgb(40, 44, 63);
+    text-align: center;
+    border: 5px solid ghostwhite;
+    font-size: larger;
+    padding: 10px;
+    margin: 0px 20px 20px 20px;
+}
+
+
+
+/*Not enough text around image to properly show off the float left property.*/
+
+.about img {
+    float: left;
+}
+
+.text {
+    background-color: rgb(61, 46, 60);
+    margin-top: 10px;
+    color: ghostwhite;
+    text-align: center;
+    border: 5px solid ghostwhite;
+    padding: 15px;
+
+}
+
+/* Text aligns left to try and show off the float property on the image, as centered put the text out of reach of the image entirely. Padding is here to help the box fit the image as it originally didn't */
+
+.specials {
+    background-color: rgb(61, 46, 60);
+    color: ghostwhite;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    font-size: larger;
+    border: 5px solid ghostwhite;
+}
+
+
+/* Centers the text because the Hours of Operation is much easier to read when centered vs other alignment */
+
+#hours {
+    text-align: center;
+    font-size: larger;
+
+}
+
+
+.menu {
+    background-color: rgb(40, 44, 63);
+    text-align: center;
+    border: 5px solid ghostwhite;
+    font-size: larger;
+    padding: 10px;
+    margin: 0px 20px 20px 20px;
+}
+
+
+
+/* #listname stylizes the subheadings of the Drinks Menu to match the headings elsewhere in page. Font-weight changed throughout next three sections to better emphasize things while retaining the the subheading position.*/
+
+.listname {
+    font-family: "Almendra SC", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18pt;
+    color: rgb(213, 217, 221);
+    text-align: center;
+
+}
+
+h2 {
+    font-family: "Almendra SC", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 32pt;
+    color: rgb(213, 217, 221);
+    background: rgb(44, 45, 53);
+
+}
+
+
+
+h3 {
+    font-family: "Almendra SC", serif;
+    font-weight: 150;
+    font-style: normal;
+    font-size: 24pt;
+    color: rgb(213, 217, 221);
+    background: rgb(44, 45, 53);
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+/* Multiple attempts at formatting the menu were made using both html and css. Ultimately the list function combined with br proved to be the best method. Below simply brings it all in line with the rest of the page. Various attempts to add a custom list style were made, but ultimate none won. */
+
+ul {
+    border: 2px solid ghostwhite;
+    background: rgb(61, 46, 60);
+    color: ghostwhite;
+    list-style-type: none;
+    padding: 20px;
+}
+
+
+a:link {
+    color: ghostwhite;
+}
+
+a:visited {
+    color: rgb(153, 43, 255);
+}
+
+a:hover {
+    background-color: rgb(150, 105, 147);
+    color: rgb(250, 250, 250);
+}

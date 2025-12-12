@@ -1,0 +1,243 @@
+ /* font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100; */
+
+ body {
+     background-color: rgb(160, 189, 170);
+ }
+
+ /*W3Schools included overflow element and while still not totally sure what it's doing removing it was a very bad idea */
+
+ .navbar {
+     background-color: rgb(41, 42, 43);
+     width: 100%;
+     overflow: auto;
+ }
+
+ .navbar a {
+     padding: 15px;
+     color: antiquewhite;
+     font-family: "Cabin", sans-serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+     text-decoration: none;
+ }
+
+ .navbar a:hover {
+     background-color: antiquewhite;
+     color: rgb(44, 54, 46);
+ }
+
+ .navbar input[type=text] {
+     float: right;
+     padding: 6px;
+     border: none;
+     margin-top: 8px;
+     margin-right: 16px;
+     font-size: 17px;
+ }
+
+
+
+ /* Styling for header. Attempted to use mint.jpg as a background-image but it failed so instead it has a solid color. */
+
+ .heading {
+     color: antiquewhite;
+     font-family: "Cabin", sans-serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+     text-align: center;
+     margin: auto;
+     width: 75%;
+     background-color: rgb(64, 78, 65);
+     box-shadow: 5px 15px 20px 5px rgb(41, 42, 43);
+ }
+
+ .heading h1 {
+     font-size: 50pt;
+     text-decoration: underline;
+     padding: 50px;
+
+ }
+
+
+ /*Setting up story card with box-shadow and setting up readability with font sizing and line spacing */
+
+ .card {
+     display: block;
+     background-color: rgb(64, 78, 65);
+     color: ghostwhite;
+     box-shadow: 0 10px 15px 0 rgb(41, 42, 43);
+     border: 2 solid rgb(41, 42, 43);
+     border-radius: 5px;
+     padding: 100px;
+     margin: 100px;
+     line-height: 50px;
+     font-size: larger;
+
+ }
+
+
+ /* Centering Image and rounding off the corners */
+
+ .card img {
+     display: block;
+     box-shadow: 10px rgb(5, 5, 5);
+     border: 2px solid rgb(5, 5, 5);
+     margin: auto;
+     border-radius: 10px 10px 10px 10px;
+
+ }
+
+ .card h2 {
+     font-family: "Cabin", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: bold;
+     font-style: normal;
+     text-align: center;
+
+ }
+
+ /*Button to return users to top since nav bar contains a link to the footer*/
+
+ .top-button {
+     text-decoration: none;
+     background: rgb(59, 68, 60);
+     border: 2 solid rgb(41, 42, 43);
+     padding: 8px 10px;
+     border-radius: 6px;
+     color: ghostwhite;
+     font-family: "Cabin", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: bold;
+     font-style: normal;
+     text-align: center;
+     display: inline-block;
+     position: fixed;
+     bottom: 20px;
+     right: 15px;
+ }
+
+
+
+ footer {
+     background-color: rgb(41, 48, 42);
+     width: 100%;
+     overflow: auto;
+     padding: 15px;
+     color: antiquewhite;
+     font-family: "Cabin", sans-serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+     text-decoration: none;
+     text-align: center;
+     margin-top: 50px;
+ }
+
+
+
+ footer a {
+     color: antiquewhite;
+     font-family: "Cabin", sans-serif;
+     font-optical-sizing: auto;
+     font-style: bold;
+     text-decoration: none;
+     font-size: larger;
+
+ }
+
+ footer a:hover {
+     background-color: antiquewhite;
+     color: rgb(44, 54, 46);
+ }
+
+
+
+
+
+
+
+
+
+
+
+ /* There is some repititon to resolve a few errors during resizing that I was seeing on my end. Fully acknowledge that that may have to do with my setup at home and the fact that I have a custom config on Firefox */
+
+
+
+ @media screen and (min-width: 576px) {
+     .navbar a {
+         float: none;
+         display: block;
+     }
+
+     .navbar input[type=text] {
+         display: none;
+     }
+
+     .card {
+         width: 50%;
+         margin: auto;
+     }
+
+     .card h2 {
+         font-size: 18pt;
+     }
+
+     .card img {
+         width: 100%;
+     }
+ }
+
+ @media screen and (min-width: 720px) {
+     .navbar a {
+         float: left;
+         display: block;
+     }
+
+     .navbar input[type=text] {
+         float: right;
+         display: block;
+         width: 15%;
+     }
+
+     .card {
+         width: 75%;
+     }
+
+     .card h2 {
+         font-size: 20pt;
+     }
+
+     .card img {
+         width: 70%;
+     }
+ }
+
+ @media screen and (min-width: 992px) {
+     .navbar a {
+         float: left;
+         display: block;
+     }
+
+     .navbar input[type=text] {
+         float: right;
+         display: block;
+         width: 20%;
+     }
+
+     .card h2 {
+         font-size: 30pt;
+     }
+
+     .card {
+         font-size: 20pt;
+     }
+
+     .card img {
+        width: 75%
+     }
+ }
